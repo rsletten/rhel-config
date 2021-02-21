@@ -1,0 +1,4 @@
+---
+- yum: 
+    name: ['telegraf', 'vim', 'git']
+    state: latest

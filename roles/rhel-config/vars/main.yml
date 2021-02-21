@@ -1,0 +1,5 @@
+---
+# vars file for rhel-config
+influxdbServer: "influxdb.rsletten.com"
+influxdbPort: 8086
+puppetServer: "puppet.rsletten.com"

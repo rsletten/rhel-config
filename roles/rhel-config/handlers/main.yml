@@ -1,0 +1,6 @@
+---
+# handlers file for rhel-config
+- name: restart puppet
+  service: name="puppet" state="restarted"
+- name: restart telegraf
+  service: name="telegraf" state="restarted"

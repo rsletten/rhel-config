@@ -1,0 +1,15 @@
+---
+- name: create rsletten
+  import_tasks: users.yml
+
+- name: influx repo
+  import_tasks: influx_repo.yml
+
+- name: install packages
+  import_tasks: install_packages.yml
+
+- name: edit telegraf.conf
+  import_tasks: telegraf_config.yml
+
+- name: ensure package is started
+  import_tasks: start_services.yml 

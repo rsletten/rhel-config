@@ -1,0 +1,11 @@
+---
+- rpm_key:
+    state: present
+    key: https://repos.influxdata.com/influxdb.key
+
+- yum_repository:
+    name: influxdb
+    description: InfluxDB Repo
+    baseurl: https://repos.influxdata.com/rhel/$releasever/$basearch/stable
+    state: present
+    enabled: yes
